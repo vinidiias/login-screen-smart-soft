@@ -134,6 +134,14 @@ button, input{
     font-size: 1rem;
 }
 
+input {
+    color: #9CA653;
+}
+
+input:focus {
+    outline: none;
+}
+
 button {
     background-color: #9CA653;
     color: #212426;
