@@ -91,13 +91,13 @@ main {
 
 /* container filho direito*/
 .container-right {
-    max-width: 60%;
+    flex-grow: 1;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin-left: 100px;
 
     background-color: #212426;
 
@@ -112,6 +112,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    width: 100%;
 }
 
 #usuario {
@@ -123,8 +124,12 @@ main {
     font-size: 1rem;
 }
 
+#pwd-confirm {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
 button, input{
-    width: 300px;
     padding: 10px 15px 10px 10px;
     
     background-color: #313538;
@@ -145,9 +150,21 @@ input:focus {
 button {
     background-color: #9CA653;
     color: #212426;
-    font-weight: 600;
+    font-weight: 700;
 }
 
+button:hover {
+    background-color: #F2EA77;
+    cursor: pointer;
+}
+
+#register {
+    font-size: .8rem;
+}
+
+#register a{
+    color: #9CA653;
+}
 
 .google-face {
     display: flex;
@@ -162,8 +179,8 @@ button {
 }
 
 #google img {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .line {
@@ -189,6 +206,13 @@ button {
     background-image: url('/assets/images/logoFacebook.png');
 }
 
+.google-face {
+    width: 100%;
+}
+
+.google-face button {
+    width: 100%;
+}
 .google-face img {
     width: 10px;
     height: 10px;
@@ -198,4 +222,38 @@ footer {
     text-align: center;
     font-weight: 600;
     color: #212426;
+}
+
+/* animacoes para manipulacao do javascript de login para registro */
+
+.show {
+    transition: 1s;
+    width: 300px;
+}
+
+.text-pwd {
+    transition: opacity 0.5s ease;
+}
+
+.hide {
+    width: 0px;
+    padding: 0px;
+    transition: 1s;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 1s ease;
+}
+
+.warning {
+    font-size: .8rem;
+    margin: 5px 0px 5px 0px;
+    text-decoration: underline;
+    /*color: #F2EA77;*/
 }

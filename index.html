@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login calistenia</title>
+    <title>Tela de login</title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/main.js"></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/validation.js" defer></script>
 
 </head>
 <body>
@@ -15,29 +16,28 @@
         </header>
         <section class="container">
             <section class="container-left">
-                
                 <h1 class="name" id="first-name">SMART SOFT</h1>
                 <h2 class="name" id="last-name">TECHNOLOGY</h2>
                 <p class="instruction">Entre com sua conta ou cadastre-se</p>
             </section>
             <section class="container-right">
                 <img src="assets/images/logoLogin.png" id="logoLogin" alt="">
-                <h1 id="title-login">Login</h1>
+                <h1 id="title-login">Entrar</h1>
+                <p id="warningLogin" class="none warning">Usuário ou senha incorreto. Tente novamente.</p>
+                <p id="warningRegister" class="none warning">Preencha todos os campos.</p>
                 <form class="sign-in">
                     <label for="usuario">Usuário</label>
                     <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário"> 
-                    <label for="pwd">Senha</label>
+
+                    <label for="pwd" class="text-pwd">Senha</label>
                     <input type="password" name="pwd" id="pwd">
-                    <button type="submit">Entrar</button>
+
+                    <label for="pwd-confirm" class="text-pwd  hidden none">Confirmar senha</label>
+                    <input type="password" name="pwd" id="pwd-confirm" class="form-input hidden none">
+
+                    <button type="submit" id="submit-button" class="button-login"><span id="text-sign">Entrar</span></button>
+                    <p id="register">Não tem uma conta? <a href="" id="register-transition">Registre-se</a></p>
                 </form>
-                <section class="line">
-                    <hr>
-                    <p>Ou</p>
-                    <hr>
-                </section>
-                <section class="google-face">
-                    <button id="google"><img src="assets/images/logoGoogle.png" alt="">Entra com Google</button>
-                </section>
             </section>
         </section>
         <footer>Desenvolvido por Vinícius Dias</footer>
