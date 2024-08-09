@@ -34,5 +34,5 @@ function LoginToRegister(){
 
         title.textContent = "Criar conta";
         title.classList.remove('hidden');
-    }, 300);
+    }, 200);
 }

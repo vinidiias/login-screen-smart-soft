@@ -27,7 +27,7 @@ body, main{
 }
 
 main {
-    background-color: #9CA653;
+    background-color: #212426;
 
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ main {
     justify-content: flex-start;
     align-items: center;
 
-    color: #212426;
+    color: #9CA653;
 }
 
 .name {
@@ -99,9 +99,9 @@ main {
     align-items: center;
 
 
-    background-color: #212426;
+    background-color: #9CA653;
 
-    color: #9CA653;
+    color: #212426;
 
     padding: 20px 60px 20px 60px;
 
@@ -113,6 +113,10 @@ main {
     flex-direction: column;
     row-gap: 5px;
     width: 100%;
+}
+
+.container-right label {
+    font-weight: 500;
 }
 
 #usuario {
@@ -132,7 +136,7 @@ main {
 button, input{
     padding: 10px 15px 10px 10px;
     
-    background-color: #313538;
+    background-color: #212426;
 
     border-radius: 10px;
     border: none;
@@ -148,22 +152,24 @@ input:focus {
 }
 
 button {
-    background-color: #9CA653;
-    color: #212426;
+    background-color: #212426;
+    color: #9CA653;
     font-weight: 700;
 }
 
 button:hover {
     background-color: #F2EA77;
     cursor: pointer;
+    color: #212426;
 }
 
 #register {
     font-size: .8rem;
+    font-weight: 500;
 }
 
 #register a{
-    color: #9CA653;
+    color: #212426;
 }
 
 .google-face {
@@ -221,7 +227,7 @@ button:hover {
 footer {
     text-align: center;
     font-weight: 600;
-    color: #212426;
+    color: #9CA653;
 }
 
 /* animacoes para manipulacao do javascript de login para registro */
@@ -255,5 +261,7 @@ footer {
     font-size: .8rem;
     margin: 5px 0px 5px 0px;
     text-decoration: underline;
+    color: #212426;
+    font-weight: 500;
     /*color: #F2EA77;*/
 }

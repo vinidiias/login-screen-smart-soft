@@ -66,7 +66,7 @@ function validationRegister(){
     let inputPassword = document.getElementById('pwd');
     let inputPasswordConfirm = document.getElementById('pwd-confirm');
 
-    if(inputUser.value === ""  || inputPassword.value === "" || inputPasswordConfirm.value === " "){
+    if(inputUser.value == ""  || inputPassword.value == "" || inputPasswordConfirm.value == ""){
         console.log('false');
         return false;
     } else {
@@ -107,5 +107,5 @@ function RegisterToLogin() {
 
         title.textContent = "Entrar"
         title.classList.remove('hidden');
-    }, 300);
+    }, 200);
 }
