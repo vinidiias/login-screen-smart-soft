@@ -294,6 +294,10 @@ footer {
     color: #9CA653;
 }
 
+footer a {
+    color: #9CA653;
+}
+
 /* animacoes para manipulacao do javascript de login para registro */
 
 .show {
