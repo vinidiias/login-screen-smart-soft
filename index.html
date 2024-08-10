@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Login screen</title>
     <link rel="stylesheet" href="css/login.css">
     <script src="js/login.js" defer></script>
     <script src="js/validation.js" defer></script>
@@ -18,31 +18,31 @@
             <section class="container-left">
                 <h1 class="name" id="first-name">SMART SOFT</h1>
                 <h2 class="name" id="last-name">TECHNOLOGY</h2>
-                <p class="instruction">Entre com sua conta ou cadastre-se</p>
+                <p class="instruction">Log in with your account or sign up</p>
             </section>
             <section class="container-right">
                 <img src="assets/images/logo4.png" id="logoLogin" alt="">
                 <h1 class="name" id="fist">SMART SOFT</h1>
                 <h2 class="name" id="last">TECHNOLOGY</h2>
-                <h1 id="title-login">Entrar</h1>
-                <p id="warningLogin" class="none warning">Usuário ou senha incorreto. Tente novamente.</p>
-                <p id="warningRegister" class="none warning">Preencha todos os campos.</p>
+                <h1 id="title-login">Log in</h1>
+                <p id="warningLogin" class="none warning">Incorrect username or password. Try again.</p>
+                <p id="warningRegister" class="none warning">Fill in all fields.</p>
                 <form class="sign-in">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário"> 
+                    <label for="usuario">Username</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Enter your username" autocomplete="off"> 
 
-                    <label for="pwd" class="text-pwd">Senha</label>
-                    <input type="password" name="pwd" id="pwd">
+                    <label for="pwd" class="text-pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd" autocomplete="off">
 
-                    <label for="pwd-confirm" class="text-pwd  hidden none">Confirmar senha</label>
-                    <input type="password" name="pwd" id="pwd-confirm" class="form-input hidden none">
+                    <label for="pwd-confirm" class="text-pwd  hidden none">Confirm password</label>
+                    <input type="password" name="pwd" id="pwd-confirm" class="form-input hidden none" autocomplete="off">
 
-                    <button type="submit" id="submit-button" class="button-login"><span id="text-sign">Entrar</span></button>
-                    <p id="register">Não tem uma conta? <a href="" id="register-transition">Registre-se</a></p>
+                    <button type="submit" id="submit-button" class="button-login"><span id="text-sign">Log in</span></button>
+                    <p id="register">Don't have an account? <a href="" id="register-transition">Sign up</a></p>
                 </form>
             </section>
         </section>
-        <footer>Desenvolvido por Vinícius Dias</footer>
+        <footer>Developed by @viniciusdiias_</footer>
     </main>
 </body>
 </html>

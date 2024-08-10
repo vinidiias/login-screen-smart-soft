@@ -23,16 +23,16 @@ function LoginToRegister(){
     textRegister.classList.add('hidden');
     setTimeout(() => {
         input[0].classList.remove('hidden');     
-        textElement[0].textContent = "Nova senha";
+        textElement[0].textContent = "New password";
         textElement[0].classList.remove('hidden');
         textElement[1].classList.remove('hidden');
 
-        textSign.textContent = "Criar conta"
+        textSign.textContent = "Create an account";
         textSign.classList.remove('hidden');
 
         textRegister.classList.add('none');
 
-        title.textContent = "Criar conta";
+        title.textContent = "Get started";
         title.classList.remove('hidden');
     }, 200);
 }

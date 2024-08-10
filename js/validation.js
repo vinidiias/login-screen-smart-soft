@@ -21,7 +21,7 @@ submitButton.addEventListener('click', () => {
     let title = document.getElementById('title-login');
     let warningRegister = document.getElementById('warningRegister');
 
-    if(title.textContent == 'Entrar') {
+    if(title.textContent == 'Log in') {
         validationLogin();
     }
     else {
@@ -52,7 +52,7 @@ function validationLogin(){
         password.value ="";
         warning.classList.add('none');
         setTimeout(() => {
-            alert('Logado com sucesso.');
+            alert('Successfully logged in.');
         }, 100)
     } else {
         warning.classList.remove('none');
@@ -96,16 +96,16 @@ function RegisterToLogin() {
 
     setTimeout(() => {
         input[0].classList.add('none');
-        textElement[0].textContent = "Senha";
+        textElement[0].textContent = "Password";
         textElement[0].classList.remove('hidden');
         textElement[1].classList.add('none');
 
-        textSign.textContent = "Entrar";
+        textSign.textContent = "Log in";
         textSign.classList.remove('hidden');
         
         textRegister.classList.remove('none');
 
-        title.textContent = "Entrar"
+        title.textContent = "Log in";
         title.classList.remove('hidden');
     }, 200);
 }
